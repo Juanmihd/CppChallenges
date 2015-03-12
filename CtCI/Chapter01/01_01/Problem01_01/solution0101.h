@@ -36,16 +36,13 @@ bool unique_character_data(char* string, int size_string){
 // This solution will be without an auxiliar data structure
 // but I am assuming that I can modify the char array
 
-bool unique_character(char* string, int size_string){
+bool unique_character(char* string_to_check, int size_string){
   //Order the string
   //We create a function to compare the elements and we use std::qsort to apply this function to order the array
-  auto compare = [](const void* A, const void* B) -> int {return *(int*)A - *(int*)B; };
-  std::qsort(string, size_string, sizeof(char), compare);
+  auto compare = [](const void* A, const void* B) -> int {return (*(char*)A < *(char*)B)?-1:1; };
+  std::qsort(string_to_check, 6, sizeof(char), compare); ///Problem with this line. Work on this.
   //Check if there are to consecutive characters
   bool repeated_character = false;
-  for (int i = 0; !repeated_character && i != (size_string - 1); ++i){
-    if (*string++ == *string++) repeated_character = true;
-  }
 
   return !repeated_character;
 }

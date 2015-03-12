@@ -29,16 +29,18 @@ int main(int argc, char** argv){
     printf("Some repeated character!\n");
   long long end1 = __rdtsc();
   //Solution 2 without aditional data structure
-  /*
+  
   long long start2 = __rdtsc();
+  /*
   if (unique_character(string_to_check, size_string_to_check))
     printf("No repeated characters!\n");
   else
     printf("Some repeated character!\n");
-  long long end2 = __rdtsc();
   */
+  long long end2 = __rdtsc();
+  
   //Printing out times of the solutions
-  printf("Solution 1 finished in %lld cycles and solution 2 finished in %lld cycles.", end1-start1, end1-start1);
+  printf("Solution 1 finished in %lld cycles and solution 2 finished in %lld cycles.", end1-start1, end2-start2);
 
   system("pause");
 }
