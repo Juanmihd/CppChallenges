@@ -1,6 +1,7 @@
 /// This is my attemp to solve problem 3 from chapter 1 in Cracking the Coding Interview
 //
 // 1.3 Given two strings, write a method to decide if one is a permutation of the other 
+// Understanding permutation as: (a,b,c)  =>  (b, c, a)   !
 
 #include <iostream>
 
