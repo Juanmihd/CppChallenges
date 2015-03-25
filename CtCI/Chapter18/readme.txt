@@ -1,9 +1,6 @@
 Problems not yet solved of chapter 18
 
 
-18.3 Write a method to randomly generate a set of m integers from an array of size n. Each element must have
-equal probability of being chosen.
-
 18.4 Write a method to count the number of 2s that appear in all the numbers between 0 and n (inclusive).
 Example:
 Input: 25
